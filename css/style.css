@@ -1,0 +1,28 @@
+body{
+	background-color: #babbbb;
+}
+.quiz{
+	margin-top: 3.5%;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 2px 4px 9px -1px rgba(40,40,40,0.6);
+}
+h1{
+	text-align: center;
+}
+button{
+	margin-bottom: 1.5%;
+
+}
+.starta{	
+	width: 100px;
+	margin:auto;
+	margin-bottom: 10px;
+}
+.btn-starta{
+	background-color: #babbbb;
+	box-shadow: 1px 3px 9px 0px rgba(40,40,40,0.6);
+}
+.btn-starta:hover{
+	box-shadow: 1px 4px 9px 0px rgba(30,30,30,0.7);
+}

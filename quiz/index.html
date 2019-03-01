@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css\bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css\style.css">
+
+	<title>Quiz</title>
+	<link rel="shortcut icon" href="img/waluigi.png">
+
+
+
+
+
+</head>
+<body>
+
+	<div class="container">
+
+
+
+
+
+
+		<div class="row">
+
+			<div class="col-md-8 offset-md-2 quiz">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Quiz!</h1>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="starta">
+							<button type="button" class="btn btn-starta startbtn" data-toggle="collapse" onclick="startaquizen()" id="starta"> Starta quiz</button>
+						</div>
+					</div>
+				</div>
+				<div class="row collapse">
+
+
+
+
+
+					<div class="col-md-12" id="ruta">
+						<div class="questions">
+
+						<h6>OBS! Svara med stor bokstav på frågorna där du skriver ett eget svar</h6><br>
+
+							<form id="quiz" name="quiz">
+
+								<p id="f1">Vem är den starkaste Nintendo skurken?</p>
+								<input id="textbox" type="text" name="fråga1" placeholder="Skriv svar här">
+								<br><br>
+
+								<p id="f2">Vem förtjänar att vara med i Smash Ultimate?</p>
+								<input type="radio" id="mc"	name="fråga2" value="Waluigi"> Waluigi<br>
+								<input type="radio" id="mc" name="fråga2" value="Goku"> Goku<br>
+								<input type="radio" id="mc" name="fråga2" value="Shrek"> Shrek<br><br>
+
+								<p id="f3">Vem är bäst på tennis?</p>
+								<input type="radio" id="mc" name="fråga3" value="Serena Williams"> Serena Williams<br>
+								<input type="radio" id="mc" name="fråga3" value="Big Chungus"> Big Chungus<br>
+								<input type="radio" id="mc" name="fråga3" value="Waluigi"> Waluigi<br><br>
+
+								<p id="f4">Vem har den finaste mustaschen?</p>
+								<input id="textbox" type="text" name="fråga4" placeholder="Skriv svar här"><br><br>
+
+								<p id="f5">Vem borde Princess Daisy välja?</p>
+								<input type="radio" id="mc" name="fråga5" value="Luigi"> Luigi<br>
+								<input type="radio" id="mc" name="fråga5" value="Waluigi"> Waluigi<br>
+								<input type="radio" id="mc" name="fråga5" value="Mario"> Mario<br>
+								<input type="radio" id="mc" name="fråga5" value="Wario"> Wario<br><br>
+
+								<p id="f6">Vem säger "WAAAA"?</p>
+								<input type="radio" id="mc" name="fråga6" value="Bowser"> Bowser<br>
+								<input type="radio" id="mc" name="fråga6" value="Sonic"> Sonic<br>
+								<input type="radio" id="mc" name="fråga6" value="Waluigi"> Waluigi<br>
+								<input type="radio" id="mc" name="fråga6" value="King Boo"> King Boo<br><br>
+
+								<p id="f7">Vem bär en lila keps med ett upp-och-nervänt L?</p>
+								<input type="radio" id="mc" name="fråga7" value="Purpleguy"> Purpleguy<br>
+								<input type="radio" id="mc" name="fråga7" value="Ness"> Ness<br>
+								<input type="radio" id="mc" name="fråga7" value="Lucas"> Lucas<br>
+								<input type="radio" id="mc" name="fråga7" value="Waluigi"> Waluigi<br><br>
+
+								<p id="f8">Vem hade vunnit en fight mot de andra?</p>
+								<input type="radio" id="mc" name="fråga8" value="Waluigi"> Waluigi<br>
+								<input type="radio" id="mc" name="fråga8" value="Thanos"> Thanos<br>
+								<input type="radio" id="mc" name="fråga8" value="Superman"> Superman<br>
+								<input type="radio" id="mc" name="fråga8" value="Shaggy"> Shaggy<br><br>
+
+								<p id="f9">Vem är längst?</p>
+								<input type="radio" id="mc" name="fråga9" value="Wario"> Wario<br>
+								<input type="radio" id="mc" name="fråga9" value="Waluigi"> Waluigi<br>
+								<input type="radio" id="mc" name="fråga9" value="Kirby"> Kirby<br>
+								<input type="radio" id="mc" name="fråga9" value="Hammer Bro"> Hammer Bro<br><br>
+
+								<p id="f10">Vem skulle överleva en zombie-apokalyps?</p>
+								<input type="radio" id="mc" name="fråga10" value="Frippe"> Frippe<br>
+								<input type="radio" id="mc" name="fråga10" value="Waluigi"> Waluigi<br>
+								<input type="radio" id="mc" name="fråga10" value="Chihuahua"> En Chihuahua<br><br>
+
+
+
+
+							</div>
+
+
+
+
+
+
+
+						</div>
+
+						<br><br>
+
+						<div class="col-md-12">
+							<div class="avsluta">
+								<input id="button" type="button" value="Avsluta Quiz" class="btn btn-starta svara" onclick="rätta()">
+							</div>
+						</form>
+						</div>
+
+					</div>
+
+
+					<div class="col-md-12">
+						<div id="resultat">
+							<br><p id="antal_rätt"></p>
+							<p id="bedöm"></p>
+						</div>
+					</div>
+				</div>
+
+
+
+				
+
+			</div>
+
+
+		</div>
+
+
+
+
+
+
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js\script.js"></script>
+</body>
+</html>
